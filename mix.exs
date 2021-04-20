@@ -4,7 +4,7 @@ defmodule MailQueue.MixProject do
   def project do
     [
       app: :mail_queue,
-      version: "0.1.0",
+      version: "0.1.1",
       elixir: "~> 1.8",
       start_permanent: Mix.env() == :prod,
       deps: deps()
@@ -25,11 +25,10 @@ defmodule MailQueue.MixProject do
     [
       {:amqp, "~> 1.1"},
       {:exprotobuf, "~> 1.2.9"},
-      {:bamboo, "~> 1.2"},
-      {:bamboo_smtp, "~> 1.6.0"},
+      {:bamboo_smtp, "~> 4.0.0"},
       {:ex_doc, "~> 0.19.3", only: :dev},
       {:credo, "~> 1.0", only: [:dev, :test], runtime: false},
-      {:distillery, "~> 2.0"}
+      {:distillery, "~> 2.1"}
     ]
   end
 end

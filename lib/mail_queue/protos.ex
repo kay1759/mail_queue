@@ -5,11 +5,11 @@ defmodule MailQueue.Protos do
 
   use Protobuf, """
     message Email {
-      string from = 1;
-      string to = 2; 
-      string subject = 3;
-      string text_body = 4; 
-      string html_body = 5; 
+      required string from = 1;
+      required string to = 2; 
+      required string subject = 3;
+      optional string text_body = 4; 
+      optional string html_body = 5;
     }
   """
 end

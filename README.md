@@ -41,11 +41,11 @@ Programing environment is as below.
 
 ### Data Format:
     message Email {
-      string from = 1;
-      string to = 2; 
-      string subject = 3;
-      string text_body = 4; 
-      string html_body = 5; 
+      required string from = 1;
+      required string to = 2; 
+      required string subject = 3;
+      optional string text_body = 4; 
+      optional string html_body = 5;
     }
 
 ### Usage:
@@ -54,8 +54,8 @@ Programing environment is as below.
 ### deploy:
     Prepare 'prod.exs' in the config directory.
 
-    mix release.init
-    MIX_ENV=prod mix release --env=prod
+    mix distillery.init
+    MIX_ENV=prod mix distillery.release --env=prod
 
     send '_build/prod/rel/mail_queue/releases/0.1.0/mail_queue.tar.gz' to server
 
