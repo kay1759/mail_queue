@@ -5,6 +5,13 @@
 
 
 ## Environment:
+Latest environment is as below.
+
+* Arch Linux version 5.19.11-arch1-1
+* Erlang 25.0
+* Elixir 1.14.0
+
+
 Programing environment is as below.
 
 * Ubuntu 18.04.1 LTS
@@ -64,6 +71,8 @@ Programing environment is as below.
     /your/directory/bin/mail_queue start
 
 ## References:
+- [https://github.com/kay1759/enqueue_mail](https://github.com/kay1759/enqueue_mail)
+- [https://github.com/kay1759/clj-enqueue-mail](https://github.com/kay1759/clj-enqueue-mail)
 - [Protocol Buffers Official](https://developers.google.com/protocol-buffers/)
 - [clojusc/protobuf (Elixir Protocol Buffer library)](https://github.com/clojusc/protobuf)
 - [pma/amqp (Elixir AMQP client)](https://github.com/pma/amqp)
